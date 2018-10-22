@@ -19,7 +19,7 @@ BOOST_AUTO_TEST_CASE(testPmapDecoding)
     BOOST_CHECK(!pmap.checkNextField());
   }
 
-  uchar oneBytePMAP[] = {255};
+  uchar oneBytePMAP[] = {255}; 
   pmap.setRaw(oneBytePMAP, 1);
 
   for(size_t n = 0; n < 7; ++n) // The first 7 should be present
